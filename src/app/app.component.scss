@@ -1,1 +1,77 @@
-.navigation
+.navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: var(--mainBg);
+    border-bottom: .1rem solid var(--navBoundary);
+
+    .nav-holder {
+        width: 95%;
+        min-height: 5rem;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .l-nav {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-right: .5rem;
+            }
+
+            .logo {
+                border: .1rem solid orange;
+                padding: .5rem;
+                color: orange;
+            }
+        }
+
+        .m-nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+
+                li {
+                    list-style: none;
+                    margin: 1rem;
+                    a {
+                        text-decoration: none;
+                        color: var(--aColor);
+                    }
+
+                    a:hover {
+                        color: orange;
+                    }
+                }
+            }
+        }
+
+        .r-nav a {
+            text-decoration: none;
+        }
+    }
+}
+
+.introduction {
+    min-height: 200vh;
+    margin-top: 20rem;
+}
+
+.button {
+    background: orange;
+    padding: .5rem 1rem;
+    border-radius: 133px 133px 131px 132px;
+                    -moz-border-radius: 133px 133px 131px 132px;
+                    -webkit-border-radius: 133px 133px 131px 132px;
+                    border: 0px solid rgb(255, 165, 0);
+    color: white;
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+
+.button:hover {
+    background-color: white;
+    color: orange;
+    border: .1rem solid orange;
+}
