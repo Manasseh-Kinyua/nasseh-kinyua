@@ -66,6 +66,44 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
+
+        .l-intro {
+            display: flex;
+            flex-direction: column;
+            row-gap: 4rem;
+            align-items: flex-start;
+
+            .intro-wave{
+                margin: 5rem 0rem 1rem 0rem;
+            }
+
+            .intro-salute {
+                // margin: 1rem 0rem;
+
+                h4 {
+                    font-size: 3.5rem;
+                    // margin: 1rem 0rem;
+                    color: var(--mainText);
+                }
+            }
+            .intro-info {
+                // margin: 1rem 0rem;
+
+                small {
+                    // margin: 2rem 0rem;
+                    color: var(--mainText);
+                }
+            }
+            .intro-btns {
+                // margin: 2rem 0rem;
+                display: flex;
+
+                a {
+                    text-decoration: none;
+                    margin: 1rem;
+                }
+            }
+        }
     }
 }
 
