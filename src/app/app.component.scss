@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 3;
     background: var(--mainBg);
     border-bottom: .1rem solid var(--navBoundary);
 
@@ -65,16 +66,21 @@
         background: var(--mainBg);
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        // justify-content: space-between;
 
         .l-intro {
             display: flex;
+            flex: 2;
+            width: 49%;
             flex-direction: column;
             row-gap: 4rem;
             align-items: flex-start;
+            background: var(--mainBg);
+            margin-right: 1rem;
 
             .intro-wave{
-                margin: 5rem 0rem 1rem 0rem;
+                margin: 5rem 0rem 0rem 0rem;
             }
 
             .intro-salute {
@@ -104,6 +110,136 @@
                 }
             }
         }
+
+        .r-intro{
+            flex: 2;
+            width: 49%;
+            background: var(--mainBg);
+            // background: black;
+
+            .r-intro-images {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .me {
+                    margin: -9rem -20rem 10rem -10rem;
+                    z-index: 1;
+                }
+
+                .vectors {
+                    // background:red;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 0;
+                    margin-top: 5rem;
+                    margin-left: 10rem;
+
+                    .img2 {
+                        margin-left: -20rem;
+                    }
+
+                    .img3 {
+                        margin-left: -30rem;
+                    }
+                }
+
+                // .img1 {
+                //     left: 50;
+                // }
+                // .img2 {
+                //     left: 0%;
+                // }
+            }
+
+            .theme-options-holder {
+                width: 30%;
+                height: 10%;
+                border-radius: 10px;
+                background: rgb(254, 229, 2);
+
+                .theme-header {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    h4 {
+                        color: black;
+                        font-size: 1.5rem;
+                        padding:.5rem ;
+                    }
+                }
+
+                hr {
+                    background-color: orange;
+                    width: 90%;
+                    height: .1rem;
+                    margin: auto;
+                }
+
+                .theme-options {
+                    display: flex;
+                    margin: .5rem;
+                    align-items: center;
+                    justify-content: space-around;
+                    padding-top: 0rem;
+                    padding-bottom: 10rem;
+
+                    .light-option{
+                        transition: 1s;
+                        width: 40px;
+                        height: 40px;
+                        background: rgb(249, 238, 238);
+                        border-radius: 50%;
+                        border: .1rem solid grey;
+                    }
+                    .light-option:hover {
+                        border: 1rem solid black;
+                        cursor: pointer;
+                    }
+
+                    .dark-option{
+                        transition: 1s;
+                        width: 40px;
+                        height: 40px;
+                        background: black;
+                        border-radius: 50%;
+                        border: .1px solid white;
+                    }
+                    .dark-option:hover {
+                        border: 1rem solid white;
+                        cursor: pointer;
+                    }
+
+                    .blue-option{
+                        transition: 1s;
+                        width: 40px;
+                        height: 40px;
+                        background: rgb(62, 62, 142);
+                        border-radius: 50%;
+                        border: .1px solid white;
+                    }
+                    .blue-option:hover {
+                        border: 1rem solid white;
+                        cursor: pointer;
+                    }
+
+                    .green-option{
+                        transition: 1s;
+                        width: 40px;
+                        height: 40px;
+                        background: rgb(100, 172, 100);
+                        border-radius: 50%;
+                        border: .1px solid white;
+                    }
+                    .green-option:hover {
+                        border: 1rem solid white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -123,3 +259,13 @@
     color: orange;
     border: .1rem solid orange;
 }
+
+
+
+
+// @media only screen and (max-width: 50px) {
+//     .l-intro {
+//         width: 100%;
+//         background: blue;
+//     }
+// }
