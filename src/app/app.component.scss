@@ -115,7 +115,7 @@
             flex: 2;
             width: 49%;
             background: var(--mainBg);
-            // background: black;
+            position: relative;
 
             .r-intro-images {
                 display: flex;
@@ -155,9 +155,17 @@
 
             .theme-options-holder {
                 width: 30%;
-                height: 10%;
+                height: 10rem;
                 border-radius: 10px;
-                background: rgb(254, 229, 2);
+                background: rgb(255, 200, 0);
+                background: white;
+                position: absolute;
+                top: 43%;
+                left: 45%;
+                z-index: 3;
+                -webkit-box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
+                -moz-box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
+                box-shadow: 101px -81px 63px 34px rgba(208,225,232,1);
 
                 .theme-header {
                     display: flex;
@@ -237,6 +245,61 @@
                         border: 1rem solid white;
                         cursor: pointer;
                     }
+                }
+            }
+
+            .intro-emoji-holder {
+                position: absolute;
+                top: 10%;
+                left: -10%;
+
+                img {
+                    width: 10rem;
+                }
+            }
+
+            .floating-div-1 {
+                position: absolute;
+                top: 6%;
+                right: 6%;
+                background-color: white;
+                display: flex;
+                width: 25%;
+                border-radius: .8rem;
+                -webkit-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                -moz-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                img {
+                    width: 4rem;
+                    margin: .5rem;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin: .5rem;
+                }
+            }
+            .floating-div-2 {
+                position: absolute;
+                top: 70%;
+                left: -8%;
+                background-color: white;
+                display: flex;
+                width: 25%;
+                border-radius: .8rem;
+                -webkit-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                -moz-box-shadow: -27px 40px 63px 34px rgba(208,225,232,1);
+                box-shadow: -27px 40px 63px 34px rgb(229, 191, 241);
+                img {
+                    width: 4rem;
+                    margin: .5rem;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    margin: .5rem;
                 }
             }
         }
