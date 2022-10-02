@@ -310,8 +310,220 @@
 }
 
 .about {
-    height: 100vh;
-    background: red;
+    height: 70vh;
+    width: 100%;
+    background: var(--mainBg);
+
+    .about-wrapper {
+        width: 95%;
+        background: var(--mainBg);
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .l-about {
+            background: var(--mainBg);
+            width: 49%;
+
+            .l-about-header {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    // justify-content: flex-start;
+            
+                    h3 {
+                        color: var(--mainText);
+                        font-size: 3rem;
+                    }
+            
+                    h4 {
+                        color: orange;
+                        font-size: 3rem;
+                    }
+                }
+
+                .l-about-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-top: 8rem;
+
+                    p {
+                        color: var(--mainText);
+                        padding: .5rem 0rem;
+                    }
+                }
+        }
+
+        .r-about {
+            background: var(--mainBg);
+            width: 49%;
+            // position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .r-about-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // justify-content: flex-start;
+        
+                h3 {
+                    color: var(--mainText);
+                    font-size: 3rem;
+                }
+        
+                h4 {
+                    color: orange;
+                    font-size: 3rem;
+                }
+            }
+
+            .overlapping-circles {
+                position: relative;
+
+                .circle-1 {
+                    position: absolute;
+                    background: rgb(55, 55, 246);
+                    width: 16rem;
+                    height: 16rem;
+                    border-radius: 50%;
+                }
+
+                .circle-2 {
+                    position: absolute;
+                    top: 10rem;
+                    background: orange;
+                    width: 16rem;
+                    height: 16rem;
+                    border-radius: 50%;
+                }
+            }
+                
+             .social-circle{
+                position: relative;
+                width: 21rem;
+                height: 21rem;
+                border-radius: 50%;
+                background: white;
+                z-index: 1;
+                margin-top: 5%;
+                margin-left: 5%;
+                -webkit-box-shadow: -65px 54px 24px -1px rgba(220,232,237,1);
+                -moz-box-shadow: -65px 54px 24px -1px rgba(220,232,237,1);
+                box-shadow: -65px 54px 24px -1px rgba(220,232,237,1);
+
+                .git-hub {
+                    width: 6rem;
+                    height: 6rem;
+                    background: white;
+                    border: .4rem solid rgb(223, 221, 221);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 33%;
+                    left: 33%;
+
+                    a {
+                        text-align: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                .linkedin {
+                    width: 6rem;
+                    height: 6rem;
+                    background: white;
+                    border: .4rem solid rgb(223, 221, 221);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: -11%;
+                    left: 33%;
+
+                    a {
+                        text-align: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                .instagram {
+                    width: 6rem;
+                    height: 6rem;
+                    background: white;
+                    border: .4rem solid rgb(223, 221, 221);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 85%;
+                    left: 33%;
+
+                    a {
+                        text-align: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                .facebook {
+                    width: 6rem;
+                    height: 6rem;
+                    background: white;
+                    border: .4rem solid rgb(223, 221, 221);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 33%;
+                    left: 82%;
+
+                    a {
+                        text-align: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+
+                .twitter {
+                    width: 6rem;
+                    height: 6rem;
+                    background: white;
+                    border: .4rem solid rgb(223, 221, 221);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 33%;
+                    left: -13%;
+                    -webkit-box-shadow: -42px 6px 24px -1px rgba(220,232,237,1);
+                    -moz-box-shadow: -42px 6px 24px -1px rgba(220,232,237,1);
+                    box-shadow: -42px 6px 24px -1px rgba(220,232,237,1);
+
+                    a {
+                        text-align: center;
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .button {
