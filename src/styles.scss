@@ -4,6 +4,9 @@
     --mainText: black;
     --aColor: rgb(45, 35, 35);
     --navBoundary: rgb(169, 166, 166);
+    --serviceCardBorderColor: rgb(255, 165, 0);
+    --cardBg: rgb(255, 255, 255);
+    --expCircleBorder : rgb(255, 165, 0);
 }
 
 * {
@@ -15,3 +18,5 @@
 body {
     font-family: 'Poppins', sans-serif;
   }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
